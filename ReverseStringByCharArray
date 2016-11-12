@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class ReverseString {
+	
+	public static String reverseStr(String str)
+	{
+		//Convert to reversely char array then return a String.
+		char[] ch = new char[str.length()];
+		int i = 0;
+		for(int j = ch.length - 1; j >= 0; j--)
+		{
+			ch[i] = str.charAt(j);
+			i++;
+		}
+		return String.valueOf(ch);
+	}
+
+	public static void main(String[] args) {
+		String str = new Scanner(System.in).nextLine();
+		String reverse = reverseStr(str);
+		System.out.println(reverse);
+
+	}
+}
